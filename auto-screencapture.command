@@ -10,7 +10,8 @@ here="`dirname \"$0\"`"
 
 while true; do
   
-  now=$(date +%s)
+  now=$(date '+%Y-%m-%d_%H.%M.%S')
+  echo $now
   screencapture -x $inbox/$now.jpg
   
   for (( i=interval; i>0; i--)); do
